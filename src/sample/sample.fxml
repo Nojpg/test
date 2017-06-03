@@ -1,0 +1,28 @@
+<!--<GridPane fx:controller="sample.Controller"-->
+          <!--xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">-->
+    <!--<Button onAction="#show"></Button>-->
+<!--</GridPane>-->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller"
+>
+<children>
+    <ScrollPane layoutX="400.0" layoutY="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+    </ScrollPane>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="50.0">
+        <children>
+            <TreeView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="treeView"/>
+        </children>
+    </AnchorPane>
+    <ToolBar layoutX="-1.0" layoutY="6.0" prefHeight="50.0" prefWidth="202.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <Button fx:id="btnAdd" mnemonicParsing="false" text="Add" onAction="#showAdd" />
+            <Button mnemonicParsing="false" text="Delete" onAction="#showDel"/>
+        </items>
+    </ToolBar>
+</children>
+</AnchorPane>
